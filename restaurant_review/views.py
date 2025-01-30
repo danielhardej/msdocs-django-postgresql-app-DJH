@@ -31,6 +31,7 @@ def create_restaurant(request):
 
 @csrf_exempt
 def add_restaurant(request):
+    print('Request to add restaurant received')
     try:
         name = request.POST['restaurant_name']
         street_address = request.POST['street_address']
